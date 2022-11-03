@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/newAccount"
+        android:title="New account"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        app:showAsAction="never"
+      >
+
+        <menu>
+            <item
+                android:id="@+id/account"
+                android:title="Account"
+                app:showAsAction="never">
+                <menu>
+                    <item
+                        android:id="@+id/creatProfilePicture"
+                        android:title="Create profile picture"
+                        app:showAsAction="never"/>
+                    <item
+                        android:id="@+id/changeProfilePicture"
+                        android:title="Change profile picture"/>
+                    <item
+                        android:id="@+id/changeUsername"
+                        android:title="Change username"/>
+                    <item
+                        android:id="@+id/changePassword"
+                        android:title="Change password"/>
+
+                </menu>
+            </item>
+            <item
+                android:id="@+id/background"
+                android:title="Background">
+                <menu>
+            <item
+                android:id="@+id/backgroundColor"
+                android:title="Set colour"/>
+
+                    <item
+                        android:id="@+id/backgroundImage"
+                        android:title="Set image"/>
+
+
+                </menu>
+
+            </item>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        app:showAsAction="never"
+        />
+</menu>
